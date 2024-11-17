@@ -15,12 +15,12 @@ import { UserFormValidation } from "@/lib/validation";
 import { useRouter } from "next/navigation";
 import { createUser } from "@/lib/actions/patient.actions";
 export enum FormFieldType {
-    INPUT= 'input'
-    TEXTAREA= 'textarea'
-    PHONE_INPUT = 'phoneinput'
-    CHECKBOX = 'checkbox'
-    DATE_PICKER = 'datePicker'
-    SELECT = 'select'
+    INPUT= 'input',
+    TEXTAREA= 'textarea',
+    PHONE_INPUT = 'phoneinput',
+    CHECKBOX = 'checkbox',
+    DATE_PICKER = 'datePicker',
+    SELECT = 'select',
     SKELETON = 'skeleton'
 }
 

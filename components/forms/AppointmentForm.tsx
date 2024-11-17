@@ -11,20 +11,18 @@ import SubmitButton from "../SubmitButton";
 import { useState } from "react";
 import { getAppointmentSchema } from "@/lib/validation";
 import { useRouter } from "next/navigation";
-import { createUser } from "@/lib/actions/patient.actions";
 import { Doctors } from "@/constant";
 import { SelectItem } from "../ui/select";
 import { Appointment } from "@/types/appwrite.types";
 import Image from "next/image";
 import { createAppointment, updateAppointment } from "@/lib/actions/appointment.actions";
-import { scheduler } from "node:timers/promises";
 export enum FormFieldType {
-    INPUT = 'input'
-    TEXTAREA = 'textarea'
-    PHONE_INPUT = 'phoneinput'
-    CHECKBOX = 'checkbox'
-    DATE_PICKER = 'datePicker'
-    SELECT = 'select'
+    INPUT = 'input',
+    TEXTAREA = 'textarea',
+    PHONE_INPUT = 'phoneinput',
+    CHECKBOX = 'checkbox',
+    DATE_PICKER = 'datePicker',
+    SELECT = 'select',
     SKELETON = 'skeleton'
 }
 
