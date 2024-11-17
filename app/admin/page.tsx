@@ -48,7 +48,7 @@ const Admin = async() => {
               icon="/assets/icons/cancelled.svg"
              />
         </section>
-        <section>
+        <section className='w-full'>
           <DataTable data={appointments.documents} columns ={columns} />
         </section>
         </main>
