@@ -8,7 +8,6 @@ import { Appointment } from "@/types/appwrite.types"
 import { revalidatePath } from "next/cache"
 
 export const createAppointment = async (appointment: CreateAppointmentParams) => {
-    console.log(appointment, "appointment is what")
     try {
         const newAppointment = await databases.createDocument(DATABASE_ID!, APPOINTMENT_COLLECTION_ID!, ID.unique(), appointment)
         return parseStringify(newAppointment)
@@ -68,7 +67,7 @@ export const updateAppointment = async ({ appointmentId, userId, appointment, ty
             throw new Error('Appointment not Found')
         }
         const smsMessage =
-            `Hi, it's CarePulse.
+            `Hi, it's HealthCare.
         ${type === 'schedule' ?
                 `Your appointment has been scheduled for ${formatDateTime(appointment.schedule!).dateTime} with Dr. ${appointment.primaryPhysician}` :
                 `We regret to inform you that your appointment has been cancelled for the following reason:${appointment.cancellationReason}`

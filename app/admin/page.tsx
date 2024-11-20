@@ -8,7 +8,6 @@ import React from 'react'
 
 const Admin = async() => {
   const appointments = await getRecentAppointmentList()
-  console.log(appointments)
   return (
     <div className='mx-auto flex max-w-7xl flex-col space-y-14'>
         <header className='admin-header'>
@@ -18,7 +17,7 @@ const Admin = async() => {
                 height={32}
                 width={162}
                 alt='logo'
-                className='h-8 w-fit'
+                className='h-16 w-fit'
                 />
             </Link>
             <p className='text-16-semibold'> Admin Dasboard</p>

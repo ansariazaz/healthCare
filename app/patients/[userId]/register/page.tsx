@@ -5,9 +5,7 @@ import React from 'react'
 export const dynamicParams = true;
 const Register = async({params}:any) => {
   const { userId } = await params; 
-  console.log(userId,"userId")
   const user = await getUser(userId)
-  console.log(user,"user kya h")
   return (
     <div className="flex h-screen max-h-screen">
       <section className="remove-scollbar container">
@@ -16,10 +14,10 @@ const Register = async({params}:any) => {
             alt="patient"
             height={1000}
             width={1000}
-            className="mb-12 h-10 w-fit"
+            className="mb-12 h-20 w-fit"
            />
            <RegisterForm user={user}/>
-            <p className="copyright py-12">©2024 CarePulse</p>
+            <p className="copyright py-12">©2024 HealthCare</p>
         </div>
       </section>
       <Image 

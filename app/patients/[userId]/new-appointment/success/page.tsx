@@ -20,7 +20,7 @@ const Success = async({params:{userId},searchParams}:SearchParamProps) => {
                         height={1000}
                         width={1000}
                         alt="logo"
-                        className='h-10 w-fit'
+                        className='h-20 w-fit'
                     />
                 </Link>
                 <section className='flex flex-col items-center'>
@@ -62,7 +62,7 @@ const Success = async({params:{userId},searchParams}:SearchParamProps) => {
                         New Appointment
                     </Link>
                 </Button>
-                <p className='copyright'>©2024 CarePulse</p>
+                <p className='copyright'>©2024 HealthCare</p>
             </div>
         </div>
     )

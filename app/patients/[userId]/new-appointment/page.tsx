@@ -13,10 +13,10 @@ export default async function NewAppointment({params:{userId}}:SearchParamProps)
             alt="patient"
             height={1000}
             width={1000}
-            className="mb-12 h-10 w-fit"
+            className="mb-12 h-20 w-fit"
            />
            <AppointmentForm type="create" userId={userId}  patientId={patient.$id}/>
-            <p className="copyright mt-10 py-12">©2024 CarePulse</p>
+            <p className="copyright mt-10 py-12">©2024 HealthCare</p>
           
         </div>
       </section>
